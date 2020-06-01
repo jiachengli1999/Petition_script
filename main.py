@@ -16,7 +16,7 @@ urls = file1.readlines()
 first_time = True
 
 # urls = ['https://www.change.org/p/black-lives-matter-activists-justice-for-tony-mcdade', 'https://www.change.org/p/gregg-abbott-justice-for-jennifer-jeffley']
-for url in urls[2:]:
+for url in urls:
     try:
         time.sleep(5)
         driver.get(url)
