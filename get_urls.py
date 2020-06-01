@@ -4,7 +4,8 @@ Lines = file1.readlines()
 
 for line in Lines:
     if '.change.org' in line:
-        file2.writelines(line)
+        new_line = line.split('%26amp;sa%3DD%26amp;')[0] +'\n'
+        file2.writelines(new_line)
 
 file1.close()
 file2.close()
